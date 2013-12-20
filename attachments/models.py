@@ -3,10 +3,15 @@ from random import randint
 import os
 
 from django.db import models
-from django.contrib.auth.models import User
 from django.utils.translation import ugettext_lazy as _
 
 from settings import ATTACHMENT_STORAGE_DIR
+
+try:
+    from django.contrib.auth import get_user_model
+    User = get_user_model()
+except ImportError:
+    from django.contrib.auth.models import User
 
 def format_filesize(size_in_bytes):
     SIZE_KEYS = ['B', 'KB', 'MB']
