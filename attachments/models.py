@@ -68,15 +68,19 @@ def get_filename(filename):
     return lt(lt(filename, '\\'), '/')
 
 class Attachment(models.Model):
-    user = models.ForeignKey(User, verbose_name=_('Attachment'))
-    file = models.FileField(max_length=255, upload_to=upload_attachment_file_path)
-    org_filename = models.TextField()
-    suffix = models.CharField(default = '', max_length=8, blank=True)
-    is_img = models.BooleanField(default=False)
-    num_downloads = models.IntegerField(default=0)
-    description = models.TextField(default = '', blank=True)
-    activated = models.BooleanField(default=False)
-    date_uploaded = models.DateTimeField(auto_now_add=True)
+    user = models.ForeignKey(User, verbose_name=_('user'))
+    file = models.FileField(_('file'), max_length=255, upload_to=upload_attachment_file_path)
+    org_filename = models.TextField(_('org filename'))
+    suffix = models.CharField(_('suffix'), default='', max_length=8, blank=True)
+    is_img = models.BooleanField(_('is img'), default=False)
+    num_downloads = models.IntegerField(_('num downloads'), default=0)
+    description = models.TextField(_('description'), default='', blank=True)
+    activated = models.BooleanField(_('activated'), default=False)
+    date_uploaded = models.DateTimeField(_('date uploaded'), auto_now_add=True)
+
+    class Meta:
+        verbose_name = _('attachment')
+        verbose_name_plural = _('attachments')
 
     def __unicode__(self):
         return '%s|%s' % (self.user.username, self.file)

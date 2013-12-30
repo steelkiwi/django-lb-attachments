@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cultura v.0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-12-20 15:12+0200\n"
+"PO-Revision-Date: 2013-12-30 11:19+0300\n"
+"Last-Translator: Andrii Tierzov <avtierzov@gmail.com>\n"
+"Language-Team: LANGUAGE <avtierzov@gmail.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+msgid "attachment"
+msgstr "вложение"
+
+msgid "attachments"
+msgstr "вложения"
+
+msgid "date uploaded"
+msgstr "дата загрузки"
+
+msgid "activated"
+msgstr "активировано"
+
+msgid "description"
+msgstr "описание"
+
+msgid "num downloads"
+msgstr "кол-во скачиваний"
+
+msgid "is img"
+msgstr "это изображение"
+
+msgid "suffix"
+msgstr "суфикс"
+
+msgid "org filename"
+msgstr "оригинальное имя"
+
+msgid "file"
+msgstr "файл"
+
